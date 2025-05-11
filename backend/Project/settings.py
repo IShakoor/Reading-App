@@ -12,6 +12,8 @@ environ.Env.read_env(BASE_DIR/"secrets.env")
 
 SECRET_KEY = env('SECRET_KEY')
 
+AUTH_USER_MODEL = 'Accounts.CustomUser'
+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env.bool('DEBUG', default=False)
 
