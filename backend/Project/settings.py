@@ -14,6 +14,8 @@ SECRET_KEY = env('SECRET_KEY')
 
 AUTH_USER_MODEL = 'Accounts.CustomUser'
 
+FIELD_ENCRYPTION_KEY = env("FIELD_ENCRYPTION_KEY")
+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env.bool('DEBUG', default=False)
 

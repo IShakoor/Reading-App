@@ -31,8 +31,8 @@ const LoginForm = () => {
 
   // form details with styling
   return (
-    <form onSubmit={handleSubmit} className="max-w-md mx-auto mt-10 p-6 bg-white rounded shadow-md space-y-4">
-      <h2 className="text-2xl font-semibold text-center text-black ">Login</h2>
+    <form onSubmit={handleSubmit} className="max-w-md mx-auto p-8 bg-[#F9F7F3] rounded-2xl shadow-md space-y-6 font-[Spectral]">
+      <h2 className="text-3xl text-center text-[#4B4B4B] font-semibold">Login</h2>
 
       <input
         type="text"
@@ -40,7 +40,7 @@ const LoginForm = () => {
         placeholder="Username"
         value={formData.username}
         onChange={handleChange}
-        className="w-full border text-center text-black bg-gray-200 border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200"
+        className="w-full px-4 py-3 rounded-lg border border-[#E6E1DC] bg-[#FAFAFA] text-[#4B4B4B] text-center focus:outline-none focus:ring-2 focus:ring-[#B4D8C1] transition duration-400"
       />
 
       <input
@@ -49,14 +49,14 @@ const LoginForm = () => {
         placeholder="Password"
         value={formData.password}
         onChange={handleChange}
-        className="w-full border text-center text-black bg-gray-200 border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200"
+        className="w-full px-4 py-3 rounded-lg border border-[#E6E1DC] bg-[#FAFAFA] text-[#4B4B4B] text-center focus:outline-none focus:ring-2 focus:ring-[#B4D8C1] transition duration-400"
       />
 
-      <button type="submit" className="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">
+      <button type="submit" className="w-full bg-[#A8CABA] hover:bg-[#8FBD9B] text-white text-2xl py-3 rounded-lg transition duration-300 transform hover:scale-[1.05]">
         Login
       </button>
 
-      {error && <p className="text-red-500 text-center">{error}</p>}
+      {error && <p className="text-[#C32F27] text-center">{error}</p>}
     </form>
   );
 };
