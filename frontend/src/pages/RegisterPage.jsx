@@ -1,5 +1,6 @@
 import RegisterForm from '../components/RegisterForm';
 import treeSilhouette from '../assets/treeImage.png';
+import birdSilhouette from '../assets/birdImage.png';
 
 const RegisterPage = () => {
   return (
@@ -29,6 +30,13 @@ const RegisterPage = () => {
         src={treeSilhouette}
         alt="Tree Silhouette"
         className="absolute bottom-25 right-40 w-100 h-auto z-2 opacity-80"
+      />
+
+      {/* bird image */}
+      <img
+        src={birdSilhouette}
+        alt="Bird Silhouette"
+        className="absolute top-10 right-30 w-100 h-auto z-2 opacity-70"
       />
 
       {/* sun */}
